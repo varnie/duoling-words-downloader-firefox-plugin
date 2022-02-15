@@ -1,0 +1,29 @@
+{
+  "description": "Adds an ability to download a list of learned words as a text file.",
+  "manifest_version": 2,
+  "name": "duolingo-words-downloader",
+  "version": "1.0",
+  "homepage_url": "https://github.com/varnie/duoling-words-downloader-firefox-plugin",
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "page_action": {
+    "browser_style": true,
+    "default_icon": {
+      "16": "icons/page-16.png",
+      "32": "icons/page-32.png"
+    },
+    "default_title": "Download learned words",
+    "show_matches": [
+      "https://*.duolingo.com/words"
+    ]
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "downloads",
+    "downloads.open"
+  ]
+}
